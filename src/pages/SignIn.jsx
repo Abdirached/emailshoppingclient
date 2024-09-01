@@ -87,7 +87,10 @@ export default function SignIn() {
               focus:bg-white focus:outline-none"
                 {...register("password", {
                   required: "Password is required",
-                  minLength: 8,
+                  minLength: {
+                    value: 8,
+                    message: "Password must be at least 8 characters long",
+                  },
                 })}
               />
               {errors.password && (
