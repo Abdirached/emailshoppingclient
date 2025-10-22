@@ -36,13 +36,6 @@ export default function SignIn() {
   };
   return (
     <section className="flex flex-col md:flex-row h-screen items-center">
-      <div className="bg-indigo-600 hidden lg:block w-full md:w-1/2 h-screen">
-        <img
-          src="https://source.unsplash.com/random"
-          alt=""
-          className="w-full h-full object-cover"
-        />
-      </div>
       <div
         className="bg-white w-full md:max-w-md lg:max-w-full md:mx-auto md:w-1/2 xl:w-1/3 h-screen px-6 lg:px-16 xl:px-12
         flex items-center justify-center"
@@ -116,7 +109,11 @@ export default function SignIn() {
             </button>
           </form>
           {error && <p className="my-1 text-red-500 text-sm">{error}</p>}
-          <hr className="my-6 border-gray-300 w-full"></hr>
+          <div className="my-4 flex items-center before:mt-0.5 before:flex-1 before:border-t before:border-neutral-300 after:mt-0.5 after:flex-1 after:border-t after:border-neutral-300 dark:before:border-neutral-500 dark:after:border-neutral-500">
+            <p className="mx-4 mb-0 text-center font-semibold dark:text-neutral-200">
+              OR
+            </p>
+          </div>
           <button
             type="submit"
             className="w-full block bg-red-500 hover:bg-red-400 focus:bg-red-400 text-white font-semibold rounded-lg
