@@ -12,6 +12,12 @@ Written by hand (no AI assistance). Companion API: `emailshoppingserver`.
 - Order inquiry forms wired to the API
 - Responsive Tailwind layout with client-side routing
 
+## Screenshots
+
+![Log in page with email/password and Google sign-in](docs/login.png)
+
+![Order submission form — shopping email, product details, category and description](docs/order-form.png)
+
 ## Stack
 
 | Layer | Technology |
